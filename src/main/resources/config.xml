@@ -6,5 +6,9 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="SimpleMessagePrinter" class="SimpleMessagePrinter"/>
+    <bean id="FrenchMessagePrinter" class="FrenchMessagePrinter"/>
+    <bean id="CustomizableMessagePrinter" class="CustomizableMessagePrinter">
+        <constructor-arg value="New Customizable Message"/>
+    </bean>
 
 </beans>

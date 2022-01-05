@@ -1,3 +1,3 @@
-public class MessagePrinter {
-    
+public interface MessagePrinter {
+    public void printMessage();
 }
