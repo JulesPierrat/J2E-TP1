@@ -1,2 +1,5 @@
+# Vscode file setting
 .vscode
-target
+
+# target file
+/target/
