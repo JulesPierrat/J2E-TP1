@@ -3,10 +3,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
     public static void main(String[] args) {
-        var printer = new SimpleMessagePrinter();
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+        SimpleMessagePrinter printer =(SimpleMessagePrinter) context.getBean("SimpleMessagePrinter");
+        // var printer = new SimpleMessagePrinter();
         printer.printMessage();
     }
-
-    ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 }
 
